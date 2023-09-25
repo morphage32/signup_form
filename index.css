@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+#plant {
+  height: 100vh;
+  width: 50vh;
+}
+
+ul {
+  list-style-type: none;
+}
