@@ -1,4 +1,5 @@
 body {
+  font-family: Arial;
   margin: 0;
   overflow: hidden;
   display: flex;
@@ -26,7 +27,35 @@ li {
 }
 
 .form_slot {
-  margin: 10px 0px 20px;
+  margin: 10px 0px;
   padding-right: 45px;
   flex-shrink: 0;
+}
+
+input {
+  font-size: 16px;
+  border-style: solid;
+  border-color: #E5E7EB;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input:focus {
+  outline: 1px solid rgb(61, 61, 255);
+  border-radius: 5px;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #596D48;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 10px;
+}
+
+a {
+  color: #596D48;
+  text-decoration: none;
 }
