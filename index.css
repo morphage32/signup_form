@@ -2,6 +2,7 @@ body {
   margin: 0;
   overflow: hidden;
   display: flex;
+  align-items: center
 }
 
 #plant {
@@ -9,6 +10,23 @@ body {
   width: 50vh;
 }
 
+#signup {
+  margin: 50px;
+}
+
 ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
+}
+
+li {
+  display: flex;
+}
+
+.form_slot {
+  margin: 10px 0px 20px;
+  padding-right: 45px;
+  flex-shrink: 0;
 }
