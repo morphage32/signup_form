@@ -25,42 +25,42 @@
     <h1>You <em>know</em> you want to.</h1><br><br>
     <h1>Let's do this!</h1>
 
-    <form>
+    <form action="#" method="get">
       <ul>
         <li>
           <div class="form_slot">
             <label for="first_name">First Name</label><br>
-            <input type="text" id="first_name" name="first_name">
+            <input type="text" id="first_name" name="first_name" pattern="\S+.*" minlength="1" maxlength="30" required>
           </div>
           <div class="form_slot">
             <label for="last_name">Last Name</label><br>
-            <input type="text" id="last_name" name="last_name">
+            <input type="text" id="last_name" name="last_name" pattern="\S+.*" minlength="1" maxlength="30" required>
           </div>
         </li>
         <li>
           <div class="form_slot">
             <label for="email">Email</label><br>
-            <input type="text" id="email" name="email">
+            <input type="email" id="email" name="email" required>
           </div>
           <div class="form_slot">
             <label for="phone_number">Phone Number</label><br>
-            <input type="text" id="phone_number" name="phone_number">
+            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
           </div>
         </li>
         <li>
           <div class="form_slot">
             <label for="password">Password</label><br>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
           </div>
           <div class="form_slot">
             <label for="confirm_password">Confirm Password</label><br>
-            <input type="password" id="confirm_password" name="confirm_password">
+            <input type="password" id="confirm_password" name="confirm_password" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
           </div>
         </li>
         <li>
           <div class="form_slot">
             <br>
-            <button>Create Account</button>
+            <button type="submit">Create Account</button>
           </div>
         </li>
         <li>
