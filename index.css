@@ -1,3 +1,8 @@
+@font-face {
+  font-family: norseBold;
+  src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
 body {
   font-family: Arial;
   margin: 0;
@@ -22,7 +27,7 @@ body {
   background-color: rgba(0, 0, 0, 50%);
   width: 50vh;
   text-align: center;
-  margin-top: 25%;
+  margin-top: 20vh;
   padding: 20px 0;
 }
 
@@ -31,9 +36,12 @@ body {
 }
 
 #logotext {
+  font-family: norseBold;
   display: inline;
+  position: relative;
+  bottom: 25px;
   color: white;
-  font-size: 72px;
+  font-size: 100px;
 }
 
 #photocredit {
@@ -44,6 +52,7 @@ body {
 
 #signup {
   margin: 50px;
+  max-width: 975px;
 }
 
 ul {
@@ -63,12 +72,20 @@ li {
   flex-shrink: 0;
 }
 
+label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
 input {
   font-size: 16px;
   border-style: solid;
   border-color: #E5E7EB;
   border-radius: 5px;
   padding: 5px;
+  width: 250px;
 }
 
 input:focus {
